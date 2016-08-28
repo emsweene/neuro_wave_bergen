@@ -19,3 +19,24 @@ To use [`FreeSurfer`](https://surfer.nmr.mgh.harvard.edu/) add the following to 
 setenv FREESURFER_HOME /backup/crate/neuro_software/freesurfer
 source $FREESURFER_HOME/SetUpFreeSurfer.csh
 ```
+
+
+##R Packages 
+
+These are some useful R packages for neuroimage analysis.  
+
+Install the following packages from CRAN: 
+
+```{r, engine='bash', eval=FALSE}
+install.packages("oro.dicom") # working with DICOM images
+install.packages("oro.nifti") # working with NIfTI objects 
+install.packages("devtools") # Getting GitHub Packages
+```
+
+Install the following packages from github: 
+
+```{r, engine='bash', eval=FALSE}
+library(devtools) 
+install_github("muschellij2/fslr") 
+install_github("muschellij2/extrantsr")
+```
