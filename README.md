@@ -1,6 +1,27 @@
 # neuro_wave_bergen
 Setup for using common neuroimaging software on the wave and bergen servers at Rice.   Inspired by John Muschelli's documentation for the jhpce cluster at Johns Hopkins (https://github.com/muschellij2/neuro_cluster) 
 
+##Create a VNC
+
+Log onto either wave or bergen and create a vnc session 
+
+```{r}
+vncserver -geometry 1024x768 -depth 16
+```
+
+Note the address of your session: 
+
+```{r}
+bergen.stat.rice.edu:XX
+```
+or 
+```{r}
+wave.stat.rice.edu XX 
+```
+depending on which server you logged onto. 
+
+Next get a VNC viewer -- I like RealVNC (https://www.realvnc.com/download/viewer/) 
+
 ##FSL 
 
 To use [`FSL`](http://fsl.fmrib.ox.ac.uk/fsldownloads/) add the following to your .cshrc profile:
